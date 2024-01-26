@@ -1,8 +1,6 @@
 import {
   AccountBox,
   AccountBoxOutlined,
-  Archive,
-  ArchiveOutlined,
   Article,
   ArticleOutlined,
   DateRange,
@@ -83,16 +81,6 @@ export const routes: Route[] = [
       displayText: 'Progress Report',
       icon: <DateRangeOutlined />,
       activeIcon: <DateRange />,
-    },
-  },
-  {
-    path: 'https://cielsachen.github.io/Research-Portfolio/',
-    element: <Navigate to="/" />,
-    sidebarProps: {
-      displayText: 'Term 1 Portfolio (Archived)',
-      icon: <ArchiveOutlined />,
-      activeIcon: <Archive />,
-      endIcon: <OpenInNew />,
     },
   },
   {

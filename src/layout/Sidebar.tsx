@@ -1,9 +1,12 @@
-import { MenuOpen } from '@mui/icons-material';
+import { ArchiveOutlined, MenuOpen, OpenInNew } from '@mui/icons-material';
 import {
   Divider,
   Drawer,
   IconButton,
   List,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
   styled,
   useTheme,
 } from '@mui/material';
@@ -67,6 +70,16 @@ export function Sidebar(props: Props) {
               />
             : null
         ))}
+        <ListItemButton
+          onClick={props.handleDrawerClose}
+          href="https://cielsachen.github.io/Research-Portfolio/"
+        >
+          <ListItemIcon>
+            <ArchiveOutlined />
+          </ListItemIcon>
+          <ListItemText primary={'Term 1 Portfolio (Archived)'} />
+          <OpenInNew />
+        </ListItemButton>
       </List>
     </Drawer>
   );
